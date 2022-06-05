@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+     
+       table, tr,td,th{
+            border: 1px solid black;
+            width: 500px;
+            height: 50px;
+            text-align: center;
+        }
+
+        th{
+            background-color:rgb(41, 129, 41);
+            color: white;
+            font-family: cursive;
+        }
+
+        td{
+            background-color:rgba(246, 238, 238, 0.918);
+            
+
+        }
+
+        td:hover{
+            background-color: rgba(128, 128, 128, 0.87);
+        }
+        .btn{
+           background-color:rgb(41, 129, 41);
+           border:rgb(41, 129, 41);
+           border-radius: 4px;
+           color: white;
+           font-size: larger;
+           font-family: 'Times New Roman', Times, serif;
+        }
+        h1{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+    <table>
+        <h1>STUDENTS RECORD</h1>
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+
+        <tr id="row1">
+            <td >0</td>
+            <td >waqas</td>
+            <td >10</td>
+            <td><button class="btn" onclick="functiononclick(this)">Delete</button></td>
+        </tr>
+
+        <tr id="row2">
+            <td>1</td>
+            <td>bilal</td>
+            <td>9</td>
+            <td><button class="btn"  onclick="function2(this)" >Delete</button></td>
+        </tr>
+
+        <tr id="row3">
+            <td>2</td>
+            <td>Ali</td>
+            <td>10</td>
+            <td><button class="btn" onclick="function3(this)">Delete</button></td>
+        </tr>
+
+        <tr id="row4">
+            <td>3</td>
+            <td>ahmed</td>
+            <td>8</td>
+            <td><button class="btn" onclick="function4(this)">Delete</button></td>
+        </tr>
+    </table>
+    </center>
+
+    <script>
+        function functiononclick(element){
+           var x = document.getElementById("row1");
+        
+           row1.remove();
+
+        }
+
+        function function2(element){
+           var x = document.getElementById("row2");
+        
+           row2.remove();
+
+        }
+        function function3(element){
+           var x = document.getElementById("row3");
+        
+           row3.remove();
+
+        }
+        function function4(element){
+           var x = document.getElementById("row4");
+        
+           row4.remove();
+
+        }
+
+
+    </script>
+</body>
+</html>
